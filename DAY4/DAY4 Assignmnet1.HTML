@@ -1,0 +1,22 @@
+<html>
+    <head>       
+    </head>
+    <body>
+		<label>Product Name :</label>
+        <input type="text" id="product"/><br/><br/>
+        <label>Unit Price :</label>
+        <input type="number" id="unitprice"/><br/><br/>
+        <label>Quantity :</label>
+        <input type="number" id="quantity"/><br/><br/>
+        <input type="button" value="Get Total" onclick="fn_getTotal()"/>
+        <p id="p1" ></p>
+       <script>
+        function fn_getTotal(){
+            var Obj1=document.getElementById("unitprice");
+            var Obj2=document.getElementById("quantity");
+            var Obj3=document.getElementById("p1");
+            Obj3.innerText= "Total Amount :"+(parseInt(Obj1.value)+parseInt(Obj2.value));
+        }
+       </script>
+    </body>
+</html>

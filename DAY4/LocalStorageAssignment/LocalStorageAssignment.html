@@ -1,0 +1,53 @@
+
+ <html>
+    <head> </head>
+    <body>
+        <h3>  HTML5 Api - Web Storage Demo </h3>
+        <hr></hr>	
+        Enter your favourite color :  
+        <select id="t1">
+            <option>Red</option>
+            <option>Pink</option>
+            <option>Black</option>
+            <option>Blue</option>
+            <option>Grey</option>
+            <option>Green</option>
+            <option>Violet</option>
+            <option>Orange</option>
+
+        </select>
+        <br></br>
+        <input type="button" onclick="f1()"   value="Set Item" />
+        <input type="button" onclick="f2()"   value="Get Item" />
+        <input type="button" onclick="f3()"   value="Remove Item" />
+        <br></br>
+        <hr/>
+        <a href="LocalStorageAssignment2.html">Next Page</a>
+        
+        <script>	
+            function f1()
+            {
+                var obj = document.getElementById("t1");
+                localStorage.setItem("uid",  obj.value);
+                alert("Favourite Color stored in webstorage.");
+            }	
+            
+            function f2()
+            {	
+                var str  =  localStorage.getItem("uid");
+                alert("Your favourite color is  : " + str);
+            }
+            
+            function f3()
+            {	
+                localStorage.removeItem("uid");
+                alert("Favourite color removed from webstorage.");
+            }		
+        </script>	 
+    </body>
+    </html>
+    
+    
+    
+    
+    
