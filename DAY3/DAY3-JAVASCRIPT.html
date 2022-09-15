@@ -1,0 +1,24 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <form action="form.php" method="POST">
+            <fieldset>
+                <label>User Name</label>
+                <input type="text" name="username" id="username"/><br/><br/>
+                <input type="button" value="Get Message" onclick="fn_getMessage()"/>
+                <p id="p1"></p>
+            </fieldset>
+        </form>
+            <script>
+                function fn_getMessage(){
+                var Obj1=document.getElementById("username");
+                var Obj2=document.getElementById("p1") ;
+                       Obj2.innerText="Welcome to "+Obj1.value;}
+            </script>
+    
+    
+
+    </body>
+</html>
