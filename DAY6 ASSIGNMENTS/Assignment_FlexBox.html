@@ -1,0 +1,121 @@
+<!-- Display text in multi column format using CSS3 -->
+<!DOCTYPE html>
+<html>
+<head>
+<style>  
+    .container-item img{
+      border-radius:100%;
+      height:60px;
+      width:60px;
+    }	 
+	.container 
+	{	
+		  margin: 40px auto 0 auto;		
+		  display : flex;
+		  flex-wrap : wrap;
+	}
+
+	.container-item 
+	{
+		  padding: 20px;
+		  border:1px solid gray;
+
+		  margin: 5px;		
+		  flex :  20%;
+      text-align:center;
+	}
+	
+	.container-item  p
+	{
+			text-align : center;
+	}
+	
+	.container-item  h4
+	{
+			color : gray; 
+			text-decoration : none;
+	}
+  .container-item a
+	{
+	
+			text-decoration : none;
+	}
+	
+	
+	@media only screen and (max-width: 500px)  
+	{ 
+			.container-item 
+			{
+				flex :   50%;
+			}
+	}
+	
+	@media only screen and (max-width: 300px)  
+	{ 
+			.container-item 
+			{
+				flex :   50%;
+			}
+	}
+	
+</style>
+</head>
+<body>
+ <h1 style="text-align:center">Meet Our Professionals</h1>
+<hr/>
+
+
+<div class="container">
+
+  <div class="container-item">
+    <img src="img1.jpg" alt="img1">
+    <h4>Heldi Hanna</h4>
+    <p>Career Advisor, Director of  Online Content at FlexJobs</p>
+    <a href="">Learn More</a>
+  </div>
+  <div class="container-item">
+    <img src="img2.jpg" alt="img2">
+    <h4>Brie Reynolds</h4>
+    <p>Speaker,Author and globally recognised stress expert</p>
+    <a href="">Learn More</a>
+  </div>
+  <div class="container-item">
+    <img src="img3.jpg" alt="img3">
+    <h4>Erica Joseph</h4>
+    <p>Head of Bussiness content stategy at Linkedln Learning</p>
+    <a href="">Learn More</a>
+  </div>
+  <div class="container-item">
+    <img src="img4.jpg" alt="img4">
+    <h4>Heldi Hanna</h4>
+    <p>Career Strategistic,Speaker,recruiter</p>
+    <a href="">Learn More</a>
+  </div>
+  <div class="container-item">
+    <img src="img5.jpg" alt="img5">
+    <h4>Heldi Hanna</h4>
+    <p>Career Advisor helping people get noticed and get hired</p>
+    <a href="">Learn More</a>
+  </div>
+  <div class="container-item">
+    <img src="img6.jpg" alt="img6">
+    <h4>Chris Taylor</h4>
+    <p>Career Advisor, Director of  Online Content at FlexJobs</p>
+    <a href="">Learn More</a>
+  </div>
+  <div class="container-item">
+    <img src="img7.jpg" alt="img7">
+    <h4>Oliver Schinkten</h4>
+    <p>Speaker,Consultant,Writer,Video Trainer</p>
+    <a href="">Learn More</a>
+  </div>
+  <div class="container-item">
+    <img src="img8.jpg" alt="img8">
+    <h4>Jason Schenker</h4>
+    <p>Economist,Finance Expert,Futurist,Speaker and Author</p>
+    <a href="">Learn More</a>
+  </div>
+</div>
+ 
+</body>
+</html>
