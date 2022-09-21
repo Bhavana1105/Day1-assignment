@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Account Creation Form</title>
+    <style>
+        *{
+            margin:2px;
+        }
+        table{
+            margin:1px;
+        }
+        #div1{
+            float:left;
+        }
+        span{
+            color:red;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align:center;">Account Closing Form</h1>
+    <hr/>
+    <form  id="form1"  
+				action="Register.php" 		
+				autocomplete="off"	
+				method="GET">
+        <label><b>Name on Account</b> <span> *</span></label><br/>
+		<input type="text"   autofocus  required   
+					name="t1" id="t1"  />
+        <input type="text"     
+					name="t2" id="t2"  /><br/>
+        <label>First Name        </label>
+        &nbsp;
+        &nbsp;
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+       
+        
+        <label>Last Name</label>
+		<br></br>
+        
+        <table >
+            <tr>
+        <td style="padding-right:260px">
+        <label for="t3"><b>Account Number</b> <span>*</span></label><br/>
+        <input type="number" required name="t3" id="t3">
+        </td>
+        <td style="padding-top:20px;">
+        <label for="type"><b>Account Type</b></label><br/>
+        <input type="radio" id="checkings" name="checkings">
+        <label for="checkings">Checkings</label><br/>
+        <input type="radio" id="Savings" name="Savings">
+        <label for="Savings">Savings</label></div>
+        </td>
+        </tr>
+        </table><br/>
+        <label for="address"><b>Address</b> <span>*</span></label><br/>
+        <input type="text" id="address1" name="address1"><br/>
+        <label for="address1">Street Address</label> <br/><br/>
+        <input type="text" id="address2" name="address2"><br/>
+        <label for="address2">Street Address Line 2</label><br/><br/>
+        <table>
+        <tr>
+        <td>
+        <input type="text" id="city" name="city"><br/>
+        <label for="city">City</label>
+        </td>
+        <td>
+            <input type="text" id="state" name="state"><br/>
+        <label for="state">State/Province</label>
+        </td>
+        <tr>
+            <td>
+                <input type="text" id="postal" name="postal"><br/>
+                <label for="postal">Postal/ Zip Code</label> 
+            </td>
+            <td>
+               <select placeholder="Please Select">
+                <option value="" disabled selected hidden>Please Select</option>
+                 <option >India</option>
+                 <option >China</option>
+                 <option >America</option>
+                 <option >Austarlia</option>
+                 <option >Japan</option>
+               </select><br/>
+               <span style="color:black;">Country</span>
+            </td>
+        </tr>
+    </table><br/>
+    <label ><b>Company Name</b></label><br/>
+    <input type="text" id="company" name="company"><br/><br/>
+    
+        <label >Telephone Number <span>*</span></label>
+        <table>
+        <tr>
+     <td>
+    <input type="number" id="code" name="code"><br/>
+    <label for="code">Area Code</label>
+    </td>
+    <td>
+    <input type="number" id="phone" name="phone"><br/>
+    <label for="phone">Phone Number</label>
+    </td>
+    <td style="padding-left:80px;">
+        <input type="radio" id="mobile" name="mobile">
+        <label for="mobile">Mobile</label><br/>
+        <input type="radio" id="Work" name="Work">
+        <label for="Work">Work</label><br/>
+        <input type="radio" id="Home" name="Home">
+        <label for="Work">Home</label>
+    </td>
+    </tr>
+    </table>
+</body>
+</html>
