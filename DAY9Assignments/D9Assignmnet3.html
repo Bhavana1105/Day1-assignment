@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Working with JSON</title>
+</head>
+<body>
+    <h1>Working with JSON</h1>
+    <div>
+                <label for="empno">Empno :</label>
+                <input type="number" id="empno" name="empno"/><br/><br/>
+                <label for="ename">Ename :</label>
+                <input type="text" id="ename" name="ename"/><br/><br/>
+                <label for="job">Job :</label>
+                <input type="text" id="job" name="job"/><br/><br/>
+                <label for="salary">Salary :</label>
+                <input type="number" id="salary" name="salary"/><br/><br/>
+                <label for="deptno">Deptno :</label>
+                <input type="number" id="deptno" name="deptno"/><br/><br/>
+            <input type="button" value="Convert to JSON" onclick="fn_ConvertToObj()">
+            <input type="button" value="Default values" onclick="fn_DefaultValues()">
+    </div>
+    <p id="para"></p>
+    <script>
+        function fn_ConvertToObj(){
+            var Empno=document.getElementById("empno");
+        var Empname=document.getElementById("ename");
+        var Job=document.getElementById("job");
+        var Salary=document.getElementById("salary");
+        var Deptno=document.getElementById("deptno");
+           var obj={empno:parseInt(Empno.value),ename:Empname.value,job:Job.value,salary:parseInt(Salary.value),deptno:parseInt(Deptno.value)};
+           var str=JSON.stringify(obj);
+            document.getElementById("para").innerText=str;
+        }
+        function fn_DefaultValues(){
+            var str1 = '{"empno":764867,"ename":"Bhavana","job":"Analyst","salary":40000,"deptno":1234}';
+            var obj1 = JSON.parse(str1);
+            empno.value=(obj1.empno);
+            ename.value=(obj1.ename);
+            job.value=(obj1.job);
+            salary.value=(obj1.salary);
+            deptno.value=(obj1.deptno);
+        }
+    </script>
+</body>
+</html>

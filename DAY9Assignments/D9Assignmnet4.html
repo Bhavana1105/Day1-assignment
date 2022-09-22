@@ -1,0 +1,27 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <h1>Displaying user data by parsing given json string</h1>
+        <input type="button" value="User Data" onclick="fn_getData()">
+        <p id="para1"></p>
+        <p id="para2"></p>
+        <p id="para3"></p>
+        <p id="para4"></p>
+        <p id="para5"></p>
+        <img  id="image" />
+        <script>
+            function fn_getData(){
+                var  str  =    '{"id":2,"email":"janet.weaver@reqres.in","first_name":"Janet","last_name":"Weaver","avatar":"https://reqres.in/img/faces/2-image.jpg"}';
+                 var obj=JSON.parse(str);
+                document.getElementById("para1").innerText="User Id :"+obj.id;
+                document.getElementById("para2").innerText="email :"+obj.email;
+                document.getElementById("para3").innerText="First Name:"+obj.first_name;
+                document.getElementById("para4").innerText="Last Name :"+obj.last_name;
+                document.getElementById("para5").innerText="Avatar:";
+                image.src=obj.avatar;
+            }
+        </script>
+    </body>
+</html>

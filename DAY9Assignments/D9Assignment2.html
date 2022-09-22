@@ -1,0 +1,24 @@
+<html>
+    <head>
+      
+    </head>
+    <body>
+       <h1>Employee Data</h1> 
+       <input type="button" value="Stringify" onclick="fn_ObjToString()">
+       <input type="button" value="Parsing" onclick="fn_StringToObj()">
+       <script>
+        function fn_ObjToString(){
+            var obj=[{empno:764867,ename:"Bhavana",job:"Analyst",salary:40000,deptno:1234},{empno:764567,ename:"Anu",job:"Analyst",salary:40000,deptno:56789}];
+            console.log(obj);
+            var str=JSON.stringify(obj);
+            console.log(str);
+        }
+        function fn_StringToObj(){
+            var str='[{"empno":764867,"ename":"Bhavana","job":"Analyst","salary":40000,"deptno":1234},{"empno":764567,"ename":"Anu","job":"Analyst","salary":40000,"deptno":56789}]';
+            console.log(str);
+            var obj=JSON.parse(str);
+            console.log(obj);
+        }
+       </script>
+    </body>
+</html>
