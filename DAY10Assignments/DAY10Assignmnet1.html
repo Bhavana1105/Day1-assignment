@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title>Customer Data</title>
+    </head>
+    <body>
+        <h1>Enter your Details</h1>
+        <form action="">
+            <label for="cname">Customer Name</label>
+            <input type="text" id="cname" name="cname"><br><br>
+            <label for="date">Joined Date</label>
+            <input type="text" id="date" name="date"><br><br>
+            <label for="color">Favourite Color</label>
+            <input type="text" id="color" name="color"><br><br>
+            <input type="button" onclick="fn_saveData()" value="Save user data" />
+            <input type="button" onclick="fn_deleteData()" value="Delete user data"/>
+            </form>
+            <a href="UserDetails.html">Next Page</a>
+        <script>
+            function fn_saveData(){
+                var nameObj=document.getElementById("cname");
+                var dateObj=document.getElementById("date");
+                var colorObj=document.getElementById("color");
+                var userObj={name:nameObj.value,date:dateObj.value,color:colorObj.value}
+                var str=JSON.stringify(userObj);
+                localStorage.setItem("userData",str);
+                alert("User details stored in local Storage")
+
+            }
+            function fn_deleteData(){
+                localStorage.removeItem("userData");
+                alert("User details are removed from local storage");
+            }
+        </script>
+        
+    </body>
+
+
+</html>

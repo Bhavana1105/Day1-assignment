@@ -1,0 +1,29 @@
+<html>
+    <head>
+
+    </head>
+    <body onload="fn_UserDetails()">
+      <h1 id="heading1"></h1>
+      <p id="para1"></p>
+    <script>
+          function fn_UserDetails(){
+            var str=localStorage.getItem("userData");
+            var paraObj1=document.getElementById("heading1");
+            var paraObj2=document.getElementById("para1");
+            if(str==null){
+              alert("No user data in local Storage");
+              paraObj1.innerHTML="Welcome to Guest User";
+              document.body.style.backgroundColor=white;
+              return;
+            }
+            else{
+              var userObj=JSON.parse(str);
+              document.body.style.background=userObj.color;
+              paraObj1.innerHTML="Welcome "+userObj.name;
+              paraObj2.innerHTML="Your joining date is "+userObj.date;
+            }
+          }
+        </script>
+    </script>
+    </body>
+</html>
