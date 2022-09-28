@@ -1,0 +1,32 @@
+@mixin bttn($color:blue,$shape:rectangle) 
+{
+     background:$color;
+
+ @if($shape=="rectangle" or $shape==""){
+       height: 300px;
+       width: 600px;
+ }
+ @else if($shape =="square"){
+    height:300px;
+    width:300px;
+ }
+ @else if($shape=="circle"){
+    height:300px;
+    width:300px;
+    border-radius:50%;
+ }
+}
+.primary
+{
+    @include bttn;
+}
+
+.success
+{
+    @include bttn($color:Green,$shape:circle);
+}
+
+.danger
+{
+    @include bttn($color:red ,$shape:square);
+}

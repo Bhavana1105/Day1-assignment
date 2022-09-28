@@ -1,0 +1,37 @@
+
+
+.heading {
+  border: 1px solid gray;
+  padding: 10px;
+  margin: 10px;
+}
+
+.t-1 {
+  font-size: 10px;
+  color: red;
+}
+
+.t-2 {
+  font-size: 20px;
+  color: red;
+}
+
+.t-3 {
+  font-size: 30px;
+  color: red;
+}
+
+.t-4 {
+  font-size: 40px;
+  color: green;
+}
+
+.t-5 {
+  font-size: 50px;
+  color: green;
+}
+
+.t-6 {
+  font-size: 60px;
+  color: green;
+}/*# sourceMappingURL=style.css.map */
