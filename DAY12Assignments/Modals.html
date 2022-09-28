@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"> 
+	
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+	
+    <title>Modal Example</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+</script>
+    </head>
+    <body>
+        <script>
+            function fn_Login(){
+        var nameObj=document.getElementById("username");
+        var passwordObj=document.getElementById("password");
+        if(nameObj.value.toUpperCase()=="BHAVANA" && passwordObj.value=="sruthi@11"){
+                alert("Welcome "+nameObj.value);
+        }
+        else{
+            alert("invalid user");
+        }
+        var modalDomObj = document.getElementById("example");
+				var modalBSObj = bootstrap.Modal.getInstance(modalDomObj);
+				modalBSObj.hide();
+       }
+        </script>
+        <h1>Modal Example</h1><br>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#example">
+        Show Login
+        </button>
+        <div class="modal" id="example">
+           <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                 <h4 class="modal-title" id="modaltitle">Enter your Details</h4>
+                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></button> 
+              </div>
+              <div class="modal-body">
+                  <label for="username">Username</label><br>
+                  <input type="text" id="username" name="username"><br>
+                  <label for="password">Password</label><br>
+                  <input type="password" id="password" name="password">
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button"  onclick="fn_Login()" class="btn btn-primary">Login</button>
+              </div>
+            
+            </div>
+              
+           </div>
+        </div>
+    </body>
