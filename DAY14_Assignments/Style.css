@@ -1,0 +1,42 @@
+.header {
+  color: pink;
+  font-size: 40px;
+}
+.para {
+  color: blue;
+}
+a {
+  color: black;
+  text-decoration: none;
+  margin-right: 10px;
+}
+a:hover {
+  text-decoration: underline;
+  font-weight: bold;
+}
+.navigation {
+  border: 2px solid gray;
+  padding: 20px;
+  margin: 20px;
+}
+.circle {
+  border: 1px solid gray;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+}
+.square {
+  border: 1px solid gray;
+  width: 300px;
+  height: 300px;
+}
+.fancybutton,
+.success,
+.warning,
+.info,
+.danger {
+  color: white;
+  background-color: black;
+  margin: 20px;
+  padding: 20px;
+}

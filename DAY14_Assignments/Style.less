@@ -1,0 +1,54 @@
+@import 'header';
+a{
+    color:black;
+    text-decoration:none;
+    margin-right:10px;
+    &:hover{
+        text-decoration:underline;
+        font-weight:bold;
+    }
+}
+.navigation{
+    border:2px solid gray;
+    padding:20px;
+    margin:20px;
+}
+.shape (@mode) when (@mode = "circle"){
+    
+        border:1px solid gray;
+        width:300px;
+        height:300px;
+        border-radius:50%;
+    
+}
+.shape (@mode) when (@mode = "square"){
+        border:1px solid gray;
+        width:300px;
+        height:300px;
+    
+}
+
+.circle{
+    .shape("circle")
+}
+.square{
+    .shape("square")
+}
+.fancybutton{
+    color:white;
+    background-color: black;
+    margin:20px;
+    padding:20px;
+}
+.success{
+    &:extend(.fancybutton);
+}
+.warning{
+    &:extend(.fancybutton);
+}
+.info{
+    &:extend(.fancybutton);
+}
+.danger{
+    &:extend(.fancybutton);
+}
